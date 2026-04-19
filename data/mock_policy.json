@@ -1,0 +1,29 @@
+{
+  "insurer": "Star Health",
+  "plan": "Comprehensive Individual",
+  "policyNumber": "SH-2024-MH-004821",
+  "sumInsured": 500000,
+  "premium": 12400,
+  "roomRentCap": 3000,
+  "roomRentCapType": "per day",
+  "coPay": 0,
+  "preExistingWaitingPeriod": 24,
+  "maternityWaiting": 24,
+  "maternitySubLimit": 50000,
+  "specificDiseaseLimits": {
+    "cataract": 40000,
+    "jointReplacement": 100000,
+    "heartValve": 150000
+  },
+  "ambulanceCover": 2000,
+  "daycareProcedures": true,
+  "ayushCover": true,
+  "ncbPercent": 5,
+  "city": "Bengaluru",
+  "insuredAge": 38,
+  "policyStartDate": "2023-04-01",
+  "policyEndDate": "2024-03-31",
+  "networkHospitals": 14000,
+  "tpa": "Medi Assist",
+  "tpaHelpline": "1800-425-9449"
+}

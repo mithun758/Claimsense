@@ -1,0 +1,14 @@
+{
+  "procedures": [
+    { "code": "KNEE_REPLACE", "name": "Total Knee Replacement", "cghsRate": 95000, "privateMultiplier": 3.2, "category": "orthopaedic" },
+    { "code": "APPENDECTOMY", "name": "Appendectomy (laparoscopic)", "cghsRate": 28000, "privateMultiplier": 2.8, "category": "general_surgery" },
+    { "code": "GALLBLADDER", "name": "Laparoscopic Cholecystectomy", "cghsRate": 32000, "privateMultiplier": 2.6, "category": "general_surgery" },
+    { "code": "ANGIOPLASTY", "name": "Coronary Angioplasty (single vessel)", "cghsRate": 125000, "privateMultiplier": 3.5, "category": "cardiac" },
+    { "code": "CATARACT", "name": "Cataract surgery (phacoemulsification)", "cghsRate": 18000, "privateMultiplier": 2.2, "category": "ophthalmology" },
+    { "code": "HYSTERECTOMY", "name": "Laparoscopic Hysterectomy", "cghsRate": 45000, "privateMultiplier": 2.8, "category": "gynaecology" },
+    { "code": "BYPASS", "name": "Coronary Artery Bypass Graft (CABG)", "cghsRate": 175000, "privateMultiplier": 3.8, "category": "cardiac" },
+    { "code": "DIALYSIS", "name": "Haemodialysis (per session)", "cghsRate": 1800, "privateMultiplier": 2.5, "category": "nephrology" },
+    { "code": "MRI_BRAIN", "name": "MRI Brain (with contrast)", "cghsRate": 4500, "privateMultiplier": 2.4, "category": "radiology" },
+    { "code": "DELIVERY_NORMAL", "name": "Normal Delivery", "cghsRate": 15000, "privateMultiplier": 2.2, "category": "maternity" }
+  ]
+}

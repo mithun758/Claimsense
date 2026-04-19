@@ -1,0 +1,16 @@
+{
+  "hospitals": [
+    { "name": "Manipal Hospital Whitefield", "city": "Bengaluru", "insurers": ["Star Health", "HDFC ERGO", "Niva Bupa", "ICICI Lombard"], "tpa": ["Medi Assist", "Health India"] },
+    { "name": "Apollo Hospital Bannerghatta", "city": "Bengaluru", "insurers": ["Star Health", "HDFC ERGO", "Niva Bupa", "ICICI Lombard", "Bajaj Allianz"], "tpa": ["Medi Assist"] },
+    { "name": "Fortis Hospital Cunningham Road", "city": "Bengaluru", "insurers": ["HDFC ERGO", "Niva Bupa", "ICICI Lombard"], "tpa": ["Paramount", "Medi Assist"] },
+    { "name": "Narayana Health City", "city": "Bengaluru", "insurers": ["Star Health", "HDFC ERGO", "Niva Bupa", "ICICI Lombard", "Bajaj Allianz", "Care Health"], "tpa": ["Medi Assist", "Health India"] },
+    { "name": "Kokilaben Dhirubhai Ambani Hospital", "city": "Mumbai", "insurers": ["Star Health", "HDFC ERGO", "Niva Bupa", "ICICI Lombard"], "tpa": ["Medi Assist", "Family Health Plan"] },
+    { "name": "Lilavati Hospital", "city": "Mumbai", "insurers": ["HDFC ERGO", "Niva Bupa", "ICICI Lombard", "Bajaj Allianz"], "tpa": ["Medi Assist"] },
+    { "name": "Apollo Hospital Greams Road", "city": "Chennai", "insurers": ["Star Health", "HDFC ERGO", "Niva Bupa", "ICICI Lombard"], "tpa": ["Medi Assist", "Health India"] },
+    { "name": "MIOT International", "city": "Chennai", "insurers": ["Star Health", "HDFC ERGO", "Care Health"], "tpa": ["Medi Assist"] },
+    { "name": "Medanta The Medicity", "city": "Delhi NCR", "insurers": ["Star Health", "HDFC ERGO", "Niva Bupa", "ICICI Lombard", "Bajaj Allianz"], "tpa": ["Medi Assist", "Health India", "Paramount"] },
+    { "name": "Max Super Speciality Hospital Saket", "city": "Delhi NCR", "insurers": ["HDFC ERGO", "Niva Bupa", "ICICI Lombard", "Bajaj Allianz"], "tpa": ["Medi Assist"] },
+    { "name": "Ruby Hall Clinic", "city": "Pune", "insurers": ["Star Health", "HDFC ERGO", "Niva Bupa", "ICICI Lombard"], "tpa": ["Medi Assist", "Family Health Plan"] },
+    { "name": "Jehangir Hospital", "city": "Pune", "insurers": ["HDFC ERGO", "Niva Bupa", "Bajaj Allianz"], "tpa": ["Medi Assist"] }
+  ]
+}

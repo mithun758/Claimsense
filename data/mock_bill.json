@@ -1,0 +1,19 @@
+{
+  "hospital": "Manipal Hospital Whitefield",
+  "city": "Bengaluru",
+  "admissionDate": "2024-02-10",
+  "dischargeDate": "2024-02-14",
+  "diagnosis": "Osteoarthritis - Right Knee",
+  "procedure": "Total Knee Replacement",
+  "totalBilled": 385000,
+  "lineItems": [
+    { "id": 1, "description": "Room charges (4 days)", "category": "room", "billed": 24000, "days": 4, "dailyRate": 6000 },
+    { "id": 2, "description": "Surgeon fee", "category": "surgeon", "billed": 85000 },
+    { "id": 3, "description": "Anaesthesiologist fee", "category": "anaesthesia", "billed": 22000 },
+    { "id": 4, "description": "OT charges", "category": "ot", "billed": 35000 },
+    { "id": 5, "description": "Ceftriaxone 1g injection x 8", "category": "drug", "billed": 2720, "unitPrice": 340, "units": 8, "nppaCode": "CEFT1G" },
+    { "id": 6, "description": "Knee implant (titanium)", "category": "implant", "billed": 185000 },
+    { "id": 7, "description": "Surgical consumables", "category": "consumable", "billed": 18000, "cdscoFlag": true },
+    { "id": 8, "description": "Physiotherapy sessions x 5", "category": "physio", "billed": 12500 }
+  ]
+}

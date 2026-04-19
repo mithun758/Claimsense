@@ -1,0 +1,14 @@
+{
+  "drugs": [
+    { "code": "CEFT1G", "name": "Ceftriaxone 1g injection", "nppaCeiling": 28.50, "unit": "vial" },
+    { "code": "AMOX500", "name": "Amoxicillin 500mg capsule", "nppaCeiling": 4.20, "unit": "capsule" },
+    { "code": "METRO400", "name": "Metronidazole 400mg tablet", "nppaCeiling": 1.80, "unit": "tablet" },
+    { "code": "PANTP40", "name": "Pantoprazole 40mg tablet", "nppaCeiling": 3.50, "unit": "tablet" },
+    { "code": "ATOR10", "name": "Atorvastatin 10mg tablet", "nppaCeiling": 2.10, "unit": "tablet" },
+    { "code": "AZITH500", "name": "Azithromycin 500mg tablet", "nppaCeiling": 18.00, "unit": "tablet" },
+    { "code": "CEFIX200", "name": "Cefixime 200mg tablet", "nppaCeiling": 12.40, "unit": "tablet" },
+    { "code": "ONDANSET4", "name": "Ondansetron 4mg injection", "nppaCeiling": 6.80, "unit": "vial" },
+    { "code": "DICLOF75", "name": "Diclofenac 75mg injection", "nppaCeiling": 9.20, "unit": "vial" },
+    { "code": "TRAMAD50", "name": "Tramadol 50mg injection", "nppaCeiling": 11.50, "unit": "vial" }
+  ]
+}

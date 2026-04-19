@@ -1,0 +1,10 @@
+{
+  "generics": [
+    { "brandedName": "Augmentin 625mg", "genericName": "Amoxicillin + Clavulanate 625mg", "brandedPrice": 280, "genericPrice": 18, "saving": 262 },
+    { "brandedName": "Taxim-O 200mg", "genericName": "Cefixime 200mg", "brandedPrice": 145, "genericPrice": 12, "saving": 133 },
+    { "brandedName": "Pantocid 40mg", "genericName": "Pantoprazole 40mg", "brandedPrice": 95, "genericPrice": 3.50, "saving": 91.50 },
+    { "brandedName": "Zofer 4mg injection", "genericName": "Ondansetron 4mg injection", "brandedPrice": 180, "genericPrice": 6.80, "saving": 173.20 },
+    { "brandedName": "Voveran 75mg injection", "genericName": "Diclofenac 75mg injection", "brandedPrice": 85, "genericPrice": 9.20, "saving": 75.80 },
+    { "brandedName": "Ultracet tablet", "genericName": "Tramadol + Paracetamol", "brandedPrice": 42, "genericPrice": 8, "saving": 34 }
+  ]
+}
