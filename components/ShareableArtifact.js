@@ -2,12 +2,18 @@
 
 import { useState } from 'react';
 
-export default function ShareableArtifact({ grade, audit, policy, journey }) {
+export default function ShareableArtifact({ grade, audit, policy, journey, claimDetails }) {
   const [copied, setCopied] = useState(false);
 
   const getText = () => {
-    if (journey === 'dispute' && audit?.totalOvercharge) {
-      return `ClaimSense found ₹${audit.totalOvercharge.toLocaleString('en-IN')} in overcharges on my ${policy?.insurer} hospital bill. The NPPA ceiling was breached on 3 items. Try it: claimsense.vercel.app`;
+    if (journey === 'dispute') {
+      const amount = claimDetails?.claimAmount
+        ? `₹${Number(claimDetails.claimAmount).toLocaleString('en-IN')}`
+        : audit?.totalOvercharge
+        ? `₹${audit.totalOvercharge.toLocaleString('en-IN')}`
+        : 'my';
+      const insurer = claimDetails?.insurer || policy?.insurer || 'my insurer';
+      return `${insurer} rejected my ${amount} claim citing "${claimDetails?.rejectionReason || 'policy terms'}". ClaimSense found the rejection was disputable and generated my letter. Try it: claimsense.vercel.app`;
     }
     if (journey === 'billAudit' && audit?.totalOvercharge) {
       return `ClaimSense audited my ${policy?.insurer} hospital bill and found ₹${audit.totalOvercharge.toLocaleString('en-IN')} in overcharges. Try it: claimsense.vercel.app`;

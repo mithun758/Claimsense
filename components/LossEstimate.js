@@ -1,12 +1,14 @@
 'use client';
 
-export default function LossEstimate({ grade, audit, coverageMap, journey, onContinue }) {
+export default function LossEstimate({ grade, audit, coverageMap, journey, claimDetails, onContinue }) {
   const getLossData = () => {
-    if (journey === 'dispute' && audit?.totalOvercharge) {
+    if (journey === 'dispute') {
+      const amount = audit?.totalOvercharge || claimDetails?.claimAmount || grade?.lossEstimate || 0;
+      const reason = claimDetails?.rejectionReason || 'claim rejection';
       return {
-        amount: audit.totalOvercharge,
-        label: 'in potential overcharges found on your bill',
-        cta: 'See your dispute letter',
+        amount,
+        label: `in potential overcharges and invalid deductions found — rejection reason: ${reason}`,
+        cta: 'See your dispute letter →',
         color: 'amber',
       };
     }
@@ -14,7 +16,7 @@ export default function LossEstimate({ grade, audit, coverageMap, journey, onCon
       return {
         amount: audit.totalOvercharge,
         label: 'in overcharges found on your hospital bill',
-        cta: 'See full bill audit',
+        cta: 'See full bill audit →',
         color: 'amber',
       };
     }
@@ -22,7 +24,7 @@ export default function LossEstimate({ grade, audit, coverageMap, journey, onCon
       return {
         amount: grade.lossEstimate,
         label: 'you may overpay if you go in unprepared',
-        cta: 'See your pre-admission pack',
+        cta: 'See your pre-admission pack →',
         color: 'blue',
       };
     }
@@ -30,14 +32,14 @@ export default function LossEstimate({ grade, audit, coverageMap, journey, onCon
       return {
         amount: grade.lossEstimate,
         label: 'at risk based on your policy gaps',
-        cta: 'See your full policy report',
+        cta: 'See your full policy report →',
         color: 'teal',
       };
     }
     return {
       amount: grade?.lossEstimate || 0,
       label: 'potential financial exposure identified',
-      cta: 'See full analysis',
+      cta: 'See full analysis →',
       color: 'teal',
     };
   };
@@ -67,7 +69,7 @@ export default function LossEstimate({ grade, audit, coverageMap, journey, onCon
         onClick={onContinue}
         className={`w-full ${c.btn} text-white font-semibold py-3 rounded-xl transition-colors text-sm`}
       >
-        {cta} →
+        {cta}
       </button>
       <div className="mt-3 text-center text-xs text-gray-400">
         Demo mode — Star Health policy, Manipal Hospital Whitefield
